@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 from langchain_core.messages import HumanMessage, AIMessage 
 from controller import RAGController
@@ -8,6 +9,10 @@ st.set_page_config(
     layout='centered',
     initial_sidebar_state='expanded',
 )
+
+# To run in share.streamlit.io
+if 'GROQ_API_KEY' in st.secrets:
+    os.environ['GROQ_API_KEY'] = st.secrets['GROQ_API_KEY']
 
 @st.cache_resource
 def get_controller():
