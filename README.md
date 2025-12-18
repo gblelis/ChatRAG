@@ -51,3 +51,26 @@ ChatRAG/
         ├── llm_factory.py    # Fábrica para modelos de LLM e Embeddings
         ├── pdf_loader.py     # Lógica de processamento e chunking de PDF
         └── vector_db.py      # Gerenciamento do FAISS Vector Store
+```
+
+---
+
+## 🧠 Visão da Arquitetura
+
+O projeto segue um padrão limpo de Controller-Service:
+
+- `app.py`: Lida com a renderização da UI e gerenciamento do Estado da Sessão (`st.session_state`). Delega toda a lógica para o Controller.
+
+- `controller.py`: O cérebro da operação. Inicializa os módulos e constrói o pipeline LangChain LCEL:
+
+    - Input -> Retriever + Histórico -> Prompt -> LLM -> Output.
+
+- `vector_db.py`: Gerencia o FAISS. Suporta `create_from_documents` (sobrescrever) e `add_documents` (atualização incremental).
+
+- `pdf_loader.py`: Lida com arquivos temporários, carregamento via `PyPDFLoader` e divisão de texto usando `RecursiveCharacterTextSplitter`.
+
+---
+
+## 📝 Licença
+
+Este projeto é para fins educacionais. Sinta-se à vontade para modificar e usar como desejar.
