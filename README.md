@@ -9,6 +9,8 @@
 
 O projeto é estruturado utilizando princípios de **POO (Programação Orientada a Objetos)** e padrões modernos do **LangChain (LCEL)** para robustez e escalabilidade.
 
+**Acesse o projeto clicando [aqui](https://lelis-chatrag.streamlit.app/)**
+
 ---
 
 ## ✨ Funcionalidades Principais

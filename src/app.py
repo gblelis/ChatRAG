@@ -11,8 +11,12 @@ st.set_page_config(
 )
 
 # To run in share.streamlit.io
-if 'GROQ_API_KEY' in st.secrets:
-    os.environ['GROQ_API_KEY'] = st.secrets['GROQ_API_KEY']
+try:
+    if 'GROQ_API_KEY' in st.secrets:
+        os.environ['GROQ_API_KEY'] = st.secrets['GROQ_API_KEY']
+except (FileNotFoundError, Exception):
+    # If raises exception, the script is in local environment
+    pass
 
 @st.cache_resource
 def get_controller():
