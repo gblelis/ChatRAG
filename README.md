@@ -5,11 +5,9 @@
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=LangChain&logoColor=white)
 ![Groq](https://img.shields.io/badge/Groq-Fast_Inference-orange?style=for-the-badge)
 
-**ChatRAG** é uma aplicação RAG (Retrieval-Augmented Generation) "Simples & Rápida" construída com Python. Ela permite que usuários façam upload de múltiplos documentos PDF e conversem com eles utilizando LLMs de última geração via **Groq** (Llama 3, Mixtral, etc.), mantendo o contexto da conversa.
+**ChatRAG** é uma aplicação RAG (Retrieval-Augmented Generation) construída com Python. Ela permite que usuários façam upload de múltiplos documentos PDF e conversem com eles utilizando LLMs via **Groq**, mantendo o contexto da conversa.
 
 O projeto é estruturado utilizando princípios de **POO (Programação Orientada a Objetos)** e padrões modernos do **LangChain (LCEL)** para robustez e escalabilidade.
-
-**Acesse o projeto clicando [aqui](https://lelis-chatrag.streamlit.app/)**
 
 ---
 
@@ -30,7 +28,7 @@ O projeto é estruturado utilizando princípios de **POO (Programação Orientad
 * **Orquestração**: [LangChain](https://langchain.com/) (Core, Community, Groq)
 * **Provedor de LLM**: [Groq](https://groq.com/)
 * **Banco Vetorial**: [FAISS](https://github.com/facebookresearch/faiss) (Versão CPU)
-* **Embeddings**: [HuggingFace](https://huggingface.co/) (`BAAI/bge-m3` ou similar)
+* **Embeddings**: [HuggingFace](https://huggingface.co/) (`BAAI/bge-m3`)
 * **Gerenciador de Pacotes**: [uv](https://github.com/astral-sh/uv) (Recomendado) ou pip
 
 ---
@@ -75,4 +73,4 @@ O projeto segue um padrão limpo de Controller-Service:
 
 ## 📝 Licença
 
-Este projeto é para fins educacionais. Sinta-se à vontade para modificar e usar como desejar.
+MIT License © 2025 Gabriel Lelis
