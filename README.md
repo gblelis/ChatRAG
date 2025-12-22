@@ -41,6 +41,7 @@ ChatRAG/
 ├── .python-version       # Arquivo de versão do Python
 ├── pyproject.toml        # Dependências (uv)
 ├── README.md             # Documentação do projeto
+├── requirements.txt      # Requisitos de pacotes do python
 ├── uv.lock               # Arquivo de sincronização do uv (Versionamento de pacotes)
 └── src/
     ├── __init__.py
