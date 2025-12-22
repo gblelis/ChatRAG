@@ -56,6 +56,69 @@ ChatRAG/
 
 ---
 
+## 🚀 Como Iniciar
+
+### Pré-requisitos:
+
+1. Python 3.10 instalado.
+
+2. Groq API Key: Obtenha uma gratuitamente em [console.groq.com](console.groq.com).
+
+3. (Opcional) `uv` instalado para gerenciamento rápido de dependências.
+
+### Instalação:
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/gblelis/ChatRAG.git
+cd ChatRAG
+```
+
+2. Instale as Dependências:
+
+- Usando `uv` (Recomendado):
+
+```bash
+uv sync
+```
+
+- Usando `pip` padrão:
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Configure o Ambiente: Crie um arquivo `.env` na raiz do projeto:
+
+```bash
+GROQ_API_KEY=gsk_sua_chave_aqui
+```
+
+## ▶️ Como Usar
+
+Rode a aplicação usando o Streamlit:
+
+```bash
+# Usando uv
+uv run streamlit run src/app.py
+
+# Ou usando python padrão
+streamlit run src/app.py
+```
+
+O app abrirá no seu navegador em `http://localhost:8501`.
+
+1. **Upload**: Use a barra lateral para carregar um ou múltiplos arquivos PDF.
+
+2. **Adicionar** ao Contexto: Clique em "Add PDFs to context" para indexar o conteúdo.
+
+3. **Chat**: Digite suas perguntas no campo principal. A IA responderá baseada apenas nos documentos fornecidos.
+
+4. **Limpar**: Use o botão de lixeira na barra lateral para limpar a memória e começar do zero.
+
+---
+
 ## 🧠 Visão da Arquitetura
 
 O projeto segue um padrão limpo de Controller-Service:
