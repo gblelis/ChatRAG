@@ -9,6 +9,8 @@
 
 O projeto é estruturado utilizando princípios de **POO (Programação Orientada a Objetos)** e padrões modernos do **LangChain (LCEL)** para robustez e escalabilidade.
 
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/c96ad8c8-114b-4589-94c7-320e5a786740" />
+
 ---
 
 ## ✨ Funcionalidades Principais
